@@ -7,4 +7,12 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: temp[0] });
 });
 
+router.get('/', function(req, res, next) {
+  res.render('index', { title: temp[1] });
+});
+
+router.get('/', function(req, res, next) {
+  res.render('index', { title: temp[2] });
+});
+
 module.exports = router;
