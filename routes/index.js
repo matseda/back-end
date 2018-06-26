@@ -4,15 +4,7 @@ var temp = [["Oslo",31],["Fredrikstad",27],["Trondheim",23]]
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: temp[0] });
-});
-
-router.get('/', function(req, res, next) {
-  res.render('index', { title: temp[1] });
-});
-
-router.get('/', function(req, res, next) {
-  res.render('index', { title: temp[2] });
+  res.render('index', JSON.stringify({ title: temp[0], title1: temp[0], title2: temp[0]}));
 });
 
 module.exports = router;
