@@ -1,6 +1,5 @@
 var createError = require('http-errors');
 var express = require('express');
-console.log("Hei");
 //var cors = require('cors');
 var path = require('path');
 var cookieParser = require('cookie-parser');
